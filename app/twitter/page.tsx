@@ -1,5 +1,4 @@
 import { Metadata, ResolvingMetadata } from "next";
-import { headers } from "next/headers";
 
 type TwitterCardProps = {
   params: {};
@@ -16,25 +15,21 @@ export async function generateMetadata(
   { params, searchParams }: TwitterCardProps,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  // 设置默认值
   const defaultValues = {
     title: "Twitter Card Default Title",
     description: "Twitter Card Default Description",
-    image: "https://example.com/default-image.jpg",
+    image:
+      "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
     creator: "@default_creator",
     site: "@default_site",
     card: "summary" as const,
   };
 
-  // 合并查询参数和默认值
   const metadata = {
     ...defaultValues,
     ...searchParams,
   };
 
-  // 验证图片尺寸要求
-  // summary card: 144x144px min, 4096x4096px max, < 5MB
-  // summary_large_image: 300x157px min, 4096x4096px max, < 5MB
   const imageUrl = metadata.image;
 
   return {
@@ -57,8 +52,9 @@ export async function generateMetadata(
       title: metadata.title,
       description: metadata.description,
       images: [imageUrl],
+      url: metadata.site,
     },
-  };
+  } as Metadata;
 }
 
 export default function Page({ searchParams }: TwitterCardProps) {
