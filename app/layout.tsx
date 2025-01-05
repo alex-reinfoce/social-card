@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import "dynamic-color-background";
+import "dynamic-color-background/index";
 
 export const metadata: Metadata = {
   title: "Social Media Card",

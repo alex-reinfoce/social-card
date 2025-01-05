@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       dynamic-color-background:
-        specifier: ^0.0.1
-        version: 0.0.1
+        specifier: ^0.0.4
+        version: 0.0.4
       next:
         specifier: 14.2.13
         version: 14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -2115,8 +2115,8 @@ packages:
   dot-case@3.0.4:
     resolution: {integrity: sha512-Kv5nKlh6yRrdrGvxeJ2e5y2eRUpkUosIW4A2AS38zwSz27zu7ufDwQPi5Jhs3XAlGNetl3bmnGhQsMtkKJnj3w==}
 
-  dynamic-color-background@0.0.1:
-    resolution: {integrity: sha512-0e8OnU1slgkcv61c+p5gVfz9bKpkdr5xaK/+Lc70ZYOr+zn7EQM2RInoLIrHmJ3OOsw4xW4960dU0RQ3vrF/Kw==}
+  dynamic-color-background@0.0.4:
+    resolution: {integrity: sha512-HGuAe+H9TC+6mK+ggp6ZcQDIqSuUMEMbmoz3T9pt5/DqUhO2dxjhaOVz6rTd4MJyo55cCOWNydrZNJHKvhGPeg==}
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
@@ -6340,7 +6340,7 @@ snapshots:
       no-case: 3.0.4
       tslib: 2.7.0
 
-  dynamic-color-background@0.0.1:
+  dynamic-color-background@0.0.4:
     dependencies:
       discord.js: 14.17.2
       express: 4.21.0
