@@ -71,7 +71,7 @@ body::backdrop {
 body::before {
   width: 50vw;
   height: 50vw;
-  background: var(--circle-1-color, rgba(255, 82, 82, 0.4));
+  background: var(--circle-1-color, transparent);
   top: -10%;
   left: -10%;
   animation: breathe1 6s ease-in-out infinite;
@@ -81,7 +81,7 @@ body::before {
 body::after {
   width: 45vw;
   height: 45vw;
-  background: var(--circle-2-color, rgba(130, 82, 255, 0.4));
+  background: var(--circle-2-color, transparent);
   top: 30%;
   left: 20%;
   animation: breathe2 7s ease-in-out infinite;
@@ -91,7 +91,7 @@ body::after {
 body::backdrop {
   width: 40vw;
   height: 40vw;
-  background: var(--circle-3-color, rgba(82, 182, 255, 0.4));
+  background: var(--circle-3-color, transparent);
   bottom: -10%;
   right: -10%;
   animation: breathe3 8s ease-in-out infinite;
